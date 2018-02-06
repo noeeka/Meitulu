@@ -15,11 +15,11 @@ SPIDER_MODULES = ['meitulu.spiders']
 NEWSPIDER_MODULE = 'meitulu.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-USER_AGENT = 'meitulu (+https://www.meitulu.com)'
+USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
-DOWNLOAD_TIMEOUT = 480
+DOWNLOAD_TIMEOUT = 600
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 CONCURRENT_REQUESTS = 8
 
@@ -32,21 +32,25 @@ CONCURRENT_REQUESTS_PER_DOMAIN = 16
 CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-# COOKIES_ENABLED = False
+COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
 # TELNETCONSOLE_ENABLED = False
 
 # Override the default request headers:
 DEFAULT_REQUEST_HEADERS = {
-	'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
-	'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-	'Referer': 'https://www.meitulu.com',
-	'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.3',
-	'Accept-Encoding': 'none',
-	'Accept-Language': 'en-US,en;q=0.8',
-	'Connection': 'keep-alive',
-	'cookie': 'UM_distinctid=1609d58bf868-08db4c409f5a5f-3c60460e-130980-1609d58bf8734b; CNZZDATA1255487232=1295110815-1514464165-%7C1514464165; Hm_lvt_e1c5237d553df792018cceb5834a3bdf=1514937759,1515134859,1515245964,1515390323; CNZZDATA1255357127=1984249438-1514466194-https%253A%252F%252Fwww.baidu.com%252F%7C1515389408; Hm_lvt_1e2b00875d672f10b4eee3965366013f=1514937747,1515126142,1515245964,1515390323; Hm_lpvt_e1c5237d553df792018cceb5834a3bdf=1515390518; Hm_lpvt_1e2b00875d672f10b4eee3965366013f=1515390518'
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'Referer': 'https://www.meitulu.com',
+    'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.3',
+    'Accept-Encoding': 'none',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'Connection': 'keep-alive',
+    'Host': 'www.meitulu.com',
+    'Cookie': 'UM_distinctid=1615a8a5941231-02e2add5ccb982-3b60490d-130980-1615a8a59427c3; CNZZDATA1255487232=1166170788-1517638529-%7C1517638529; Hm_lvt_1e2b00875d672f10b4eee3965366013f=1517834010,1517907175,1517912740,1517918182; CNZZDATA1255357127=841331509-1517642330-%7C1517915800; Hm_lpvt_1e2b00875d672f10b4eee3965366013f=1517919259',
+    'If-Modified-Since': 'Mon, 22 Jan 2018 01:39:56 GMT',
+    'If-None-Match': 'W/"5a6540ec-3c3a"',
+    'Upgrade-Insecure-Requests': '1'
 }
 
 # Enable or disable spider middlewares
