@@ -15,34 +15,9 @@ class MeituluSpider(scrapy.Spider):
     name = "meitulu"
     allowed_domains = ["meitulu.com"]
     start_urls = [
-        "https://www.meitulu.com/t/nvshen/",
-        "https://www.meitulu.com/t/nvshen/2.html",
-        "https://www.meitulu.com/t/nvshen/3.html",
-        "https://www.meitulu.com/t/nvshen/4.html",
-        "https://www.meitulu.com/t/nvshen/5.html",
-        "https://www.meitulu.com/t/nvshen/6.html",
-        "https://www.meitulu.com/t/nvshen/7.html",
-        "https://www.meitulu.com/t/nvshen/8.html",
-        "https://www.meitulu.com/t/nvshen/9.html",
-        "https://www.meitulu.com/t/nvshen/10.html",
-        "https://www.meitulu.com/t/nvshen/11.html",
-        "https://www.meitulu.com/t/nvshen/12.html",
-        "https://www.meitulu.com/t/nvshen/13.html",
-        "https://www.meitulu.com/t/nvshen/14.html",
-        "https://www.meitulu.com/t/nvshen/15.html",
-        "https://www.meitulu.com/t/nvshen/16.html",
-        "https://www.meitulu.com/t/nvshen/17.html",
-        "https://www.meitulu.com/t/nvshen/18.html",
-        "https://www.meitulu.com/t/nvshen/19.html",
-        "https://www.meitulu.com/t/nvshen/20.html",
-        "https://www.meitulu.com/t/nvshen/21.html",
-        "https://www.meitulu.com/t/nvshen/22.html",
-        "https://www.meitulu.com/t/nvshen/23.html",
-        "https://www.meitulu.com/t/nvshen/24.html",
-        "https://www.meitulu.com/t/nvshen/25.html",
-        "https://www.meitulu.com/t/nvshen/26.html",
-        "https://www.meitulu.com/t/nvshen/27.html",
-
+        "https://www.meitulu.com/t/taboo-love/",
+        "https://www.meitulu.com/t/taboo-love/2.html",
+        "https://www.meitulu.com/t/taboo-love/3.html"
     ]
 
     def parse(self, response):
